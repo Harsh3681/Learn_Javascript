@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript insertBefore()</title>
+</head>
+
+<body>
+    <ul id="menu">
+        <li>Services</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+     
+    
+    <script>
+
+// ### NOTE ### we use this insertBefore()_after() in our expense project see there  
+
+        let menu = document.getElementById('menu');
+        // create a new li node
+        let li = document.createElement('li');
+        li.textContent = 'Home';
+
+// insert a new node before the first list item
+// ## NOTE syntax ##    parentNode.insertBefore(newNode, existingNode);
+
+// insertBefore()
+        // menu.insertBefore(li, menu.firstElementChild);
+        // menu.insertBefore(li, menu.lastChild);
+
+// insertAfter()  
+        menu.insertAfter(li,  menu.lastElementChild);
+
+    </script>
+</body>
+
+</html>

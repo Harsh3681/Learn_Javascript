@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+h1{
+    padding: 1rem 2rem;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+
+main h1 span{
+    background-color: pink;
+    border-radius: 10px;
+}
+
+main .container{
+    margin-top: 50vh;
+    text-align: center;
+    justify-content: center;
+}
+
+main .btn{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: blueviolet;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: background 0.4s;
+}
+
+main .btn:hover{
+    background: rgb(183, 119, 219);
+}

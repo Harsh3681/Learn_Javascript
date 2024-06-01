@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expence Mangement.</title>
+    <link rel="stylesheet" href="expence.css"></link>
+    <script src="expence.js" defer></script>  
+</head>
+
+
+<body>
+
+    <div class="container">
+        <form action="" id="expence">
+            
+            <div class="firstrow">
+                <label for="product" >Product
+                    <input type="text" id="product" placeholder="Insert Product Name" required autofocus/>
+                </label>
+            </div>
+            
+             
+            <div class="secondrow">
+                <label for="amount" >Amount
+                    <input type="number" id="amount" placeholder="Insert Product Amount"/>
+                </label>
+            </div>
+
+            <div class="thirdrow">
+                <label for="delete_raw" >Id
+                    <input type="number" id="delete_id" placeholder="Insert Delete Id"/>
+                </label>
+            </div>
+            <br>
+
+            <button id="clear">clear</button>
+            <button id="submit" >Submit</button>
+        </form>
+        <button id="show_data" >Show-Data</button>
+        <button id="delete_data" >Delete-Data</button>
+
+        <!-- <div class="showme">
+            
+        </div> -->
+
+        <div class="center-wrapper">
+            <div class="create-table hidden">
+                <table class="for-expence">  
+                    <h1>Your Expences</h1>
+                    <thead class="amhead" >
+                        <tr>
+                            <th>ID</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody class="ambody">
+                        <tr id="am-total-tr">
+                            <td id="total-id"><b>Total</b></td>
+                            <td id="total-prod"><b></b></td>
+                            <td id="total-amount"><b></b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+</body>
+   
+</html>

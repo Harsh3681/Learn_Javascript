@@ -1,0 +1,53 @@
+*{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-image: radial-gradient(circle at center center, rgb(164,164,164),rgb(8, 8, 8));
+}
+
+table{
+    border-collapse: collapse;
+    background-color: bisque;
+}
+
+.for-expence{
+    border: 2px solid black;
+}
+
+th{
+    border: 2px solid black;
+    padding: 0.6rem;
+}
+.am-td{
+    /* border: 2px solid black; */
+    text-align: center;
+    padding: 0.6rem;
+}
+td{
+    border: 2px solid black;
+    text-align: center;
+    padding: 0.6rem;
+
+}
+.hidden{
+    display: none;
+}
+
+.container{
+    text-align: center;
+    position: static;
+}
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+/* Input Buttons ------------------------------------------- */
+
+
+
+
+

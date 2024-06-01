@@ -1,0 +1,412 @@
+
+Beginning_Core_Js
+
+JavaScript is a dynamically typed language
+This means that you don’t need to specify the variable’s type in the declaration like other static-typed languages such as Java 
+
+console.log(null == undefined); // true
+
+console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+console.log(Number.MIN_VALUE); // 5e-324
+
+NaN
+NaN stands for Not a Number.
+console.log('a'/2); // NaN;
+
+console.log(Boolean(Infinity));  // true
+
+An octal literal number starts with the digit zero (0) followed by a sequence of octal digits (numbers from 0 through 7). For example:
+let num = 071;
+console.log(num);
+###### number not in the range from 0 to 7
+let num = 080;
+console.log(num);
+o/t = 80
+
+Hexadecimal numbers
+Hexadecimal numbers start with 0x or 0X followed by any number of hexadecimal digits (0 through 9, and a through f).
+let num = 0x1a;
+console.log(num);
+o/t = 26
+
+
+----------------------------------------------------------------
+
+
+15 January 2023
+19:03
+
+
+Java Script_ Array And All
+
+14 January 2023
+14:02
+
+Flow Of code
+
+alert("Do u Want To Close App");
+
+Here Alert is an function
+In " " is message
+; is closing
+
+------------------------------------
+
+Data Type
+
+  1) "String
+
+  2) "Number
+
+  3) "Boolean
+
+
+Java Variable
+
+# "Var") 	Redeclaring a variable with "var" is allowed anywhere in a program
+ex	var x = 10;
+	// Here x is 10
+	{
+	var x = 2;
+	// Here x is 2
+	}
+------------------------------------
+
+# "Const")	A const variable cannot be reassigned:
+Ex.	const PI = 3.141592653589793;
+	PI = 3.14;      // This will give an error
+	PI = PI + 10;   // This will also give an error
+
+------------------------------------
+
+# "Let")	 Variables defined with let cannot be redeclared. But we can change the value of it
+ex	let x = "John Doe";
+	let x = 0;              // wrong
+	x = 0;                // correct
+
+	// SyntaxError: 'x'
+
+Nothing don’t have to decleared Anything
+
+---------------------------------------------------------------------------------------------
+equal sign (=) is an "assignment" operator, not an "equal to" operator.
+
+"equal to"(==) used operator is written like  in JavaScript.
+
+IMP NOTE  - In js once we declared the variable any type let , var , const it will get an space assigned to it in memory .
+Means we are not able to change data variable name assigned to it 
+
+Ex.  
+const k = prompt("Tell me name ?");  
+alert("Hii "+k);
+
+Identifier 'k' has already been declared
+Because I already declared let k  now not able to change there data variable name i.e const k
+
+
+JavaScript has 8 Datatype              data type means ex  --->   let length = 16;
+										Here  let is variable type length is variable name  &&  16 is (number) datatype element  That number is our Datatype
+
+1. String
+2. Number
+3. Bigint
+4. Boolean
+5. Undefined
+6. Null
+7. Symbol
+8. Object
+The Object Datatype
+The object data type can contain:
+1. An object
+2. An array
+3. A date
+
+While Declaring Array Obj
+
+var my_obj = {                         <------  " curly Bra" means "Obj" literals
+    firstN : "Jay",
+    MiddleN : "Kisan",
+    LastN : "Rathod"                   <------ NOTE : Not used   ;   or  , at the end ammm
+}
+
+
+Array declaration   
+
+// create An array by "Traditional Method" 
+
+const = [];                // Array must be of "const" type
+a = [2,4,4,6,78];    // a = [3,"su",'u',true,null];
+
+
+// Check is array or not
+
+<Array_Name>.isArray()
+
+// create An array by "constructor" 
+
+var aa = new Array();             // here we declared an simple array without given its size
+
+var aa = new Array(6);        // "size" = 6    // Here we gives "size" to the array i.e 6 dynamically
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Array some method
+
+Push	   put the element at the "end"
+
+Pop	   pop the element present at the "end"
+
+Unshift	  put the element at the "front"
+
+Shift	     remove the element at the "front"
+
+How to used
+
+<Arrays_Name>.operation(element)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Copied one array to another array
+
+Array1  = [1,2];
+Array2 = [];
+ spread method	   (… <array_name)     or
+ spread method	   (… <array_name,   item1, item2………..etc)
+
+
+Array2 = […Array1];
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Assigning the value of array element to an  variables at a one time 
+
+var aa = [1,3,4];
+let [a,b,c,d] = aa;    or skip value    let [a, ,c,d] = aa; here we skip 2nd value
+console.log(a,b,c,d);
+
+o/t
+
+1 3 4 undefined
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+At a time Assigning the value elements and  arrays also 
+
+var jj = [1,3,4];
+var ki = [];
+let [p,q, ...new_array] = aa;        // here p, q  and also to  "ki" array
+console.log(p,q);
+console.log(ki);
+
+… (tripal dot(.) means  create an new array who is consist of an remaining value
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Object destruction
+
+// creating an array storing an multiple "obj" use [ ] "Bracket"
+const me = [
+        {name :"abijit", salary:278282, age:23},
+        {name :"Abhinav", salary:747482, age:24},
+        {name :"achal", salary:766477, age:25},
+]
+
+const [{name}, ,{age}] = me;
+console.log(name);     // here we directly access an "first column name"
+console.log(age);      // and "last column age"
+
+
+Also we can change there namesa
+
+const [{name: myName}, ,{age: myAge}] =me;
+console.log(name);  // error becz new name is "myName"   
+console.log(age);   // error becz new name is "myage"
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+const hair_colour = "black";
+const arr = {
+        name : "audya",
+        age :34,
+        Colour: "pink",
+        "size of shirt" : 22
+}
+console.log(arr.Colour)
+console.log(arr["size of shirt"])        // becz of this name is in form "with spaces" hence we have to write it in this bracket
+
+//  if we want to cerate the given variable "value as an key" then used as follow.
+// Ex 
+// we will make here "black" as an "key" for other value given "above hair_colour key"
+// ans below
+
+arr[hair_colour] = "t-shirt_colour";
+console.log(arr);
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+For in  && For of  loops for iteration
+
+
+For in     ---->  It will directly Print 
+
+for(var hh in aa)                                 // Here it will first take an indices in given variable and then we can apply an 
+        console.log(aa[i]);                                       Accessing process on it while iterating 
+
+
+for(var hh of aa){                                          // Here it will directly value in given variable and then directly we can print it or
+									 used it whenever req}
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+window.alert()	               alert()
+window.prompt()	               prompt()
+window.confirm()	              confirm()
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The .innerHTML property can be used to write the dynamic html on the html document.   (     .innerHTML   )
+
+
+
+
+
+
+
+
+
+
+
+If we want to declared the Script in the html file then we have declared  Option either
+ 
+Inside body -----> we don't have to mention the defer 
+Ex.    
+<script src="first.js"></script>
+
+head tag ----->  have to mention the defer
+Ex.
+<script src="first.js" defer></script>
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Convert Number to String Short Trick
+
+var num =9;
+var h = num + "";                    mention  the    ""   with the integer
+console.log(typeof(h));                   here we check the Type
+
+Or
+
+var h = String(num);
+console.log(typeof(h));                   here we check the Type
+
+Convert String to Number Short Trick
+
+var num = "9" ;
+var h = Number(num);
+console.log(typeof(h));                   here we check the Type
+
+Or
+
+var h = +num;                        used "+" operator before var 
+console.log(typeof(h));                     we check the Type
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Formatting The String
+
+var name = "Jaybhai";
+var age = 92;
+console.log(age);
+let About = `Ur name is ${name} age ${age}`          <------here  {}  {}
+console.log(About);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Declaring  The BigInt
+
+Let k = BigInt(8);
+Or
+let k = 8n;                       used "n" at the end
+console.log(typeof k);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  "=="  and  "==="       equal's to
+
+
+let h = 88;      <--- int
+var g = "88";    <--- String
+
+"=="  
+console.log(h==g);      // here the "==" just take care's of only "element" present in given variable
+
+"===" 
+console.log(h===g);     // Where the "===" also take care's of the "element" && "DataType" of element present in given variable
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  "!="  and  "!=="      Not equal's to
+
+let h = 88;      <--- int
+var g = "88";    <--- String
+
+console.log(h!=g);       <--- Without Checking "DataType"  Ans is "False"
+console.log(h!==g);      <--- With Checking "DataType"  Ans is "true"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  Ternary Operator   ( ? : )
+
+var a = 1;
+let bi = a>8 ? "yes" : "No";
+console.log(bi);
+
+Answer is "No"
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+nullish coalescing operator (??) that accepts two values and returns the second value if the first one is null or undefined.
+
+const result = value1;
+if(result === null || result === undefined) {
+   result = value2;
+}
+-------------------
+const name = null ?? 'John';
+console.log(name); 
+o/t --> 'John'
+-------------------
+const age = undefined ?? 28;
+console.log(age);
+o/t --> 28
+-------------------
+let count;
+let result = count || 1 ;
+console.log(result); 
+o/t --> 1
+-------------------
+let result = 1 ?? console.log('Hi');
+console.log(result);
+-------------------
+let result = undefined ?? console.log('Hi');
+console.log(result);
+o/t --> "Hi"
+-------------------
+
+
+
+
+
+

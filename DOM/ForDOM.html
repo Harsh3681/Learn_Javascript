@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/DOM/ForDOM.css">
+
+
+    <!-- <script src="1element_by.js" defer></script>        -->
+    <!-- <script src="2QuerySelector_QuerySelectorAll.js" defer></script>        -->
+    <!-- <script src="3QuereySelector_Id_Class.js" defer></script>        -->
+    <!-- <script src="4Change_text_Color_On_page.js" defer></script>        -->
+    <!-- <script src="5Get_Only_Required_Text.js" defer></script>        -->
+    <!-- <script src="6_Get_All_ele_Change_by_loop.js" defer></script>        -->
+    <!-- <script src="6_getAttribute.js" defer></script>        -->
+    <!-- <script src="6_Get_ele_by_TagName.js" defer></script>        -->
+    <!-- <script src="7Parent_Child_Sibling.js" defer></script>        -->
+    <!-- <script src="8Add_remove_toggle_the_classes.js" defer></script>        -->
+    <!-- <script src="9add_ele_by_innerHTML.js" defer></script>        -->
+    <!-- <script src="10add_ele_by_createElement_append_prepend_remove_before_after.js" defer></script>        -->
+    <!-- <script src="11Static_Vs_Live_List.js" defer></script>        -->
+    <!-- <script src="12GetDimension.js" defer></script>        -->
+    <!-- <script src="13click_eventListener.js" defer></script>        -->
+    <!-- <script src="14_this_keyword_with_click.js" defer></script>        -->
+    <!-- <script src="15Loops_On_keywords.js" defer></script>        -->
+    <!-- <script src="16_e_object.js" defer></script>        -->
+    <!-- <script src="17keypress_mouseover_mouseleave_EventListner.js" defer></script>        -->
+    <!-- <script src="18.toprevent_the_page_reload.js" defer></script>        -->
+    <!-- <script src="20_Local_Storage.js" defer></script>        -->
+    
+    <script src="/DOM/ForDOM.js" defer></script> 
+    
+    
+    <title>Create HTML for DOM Understanding</title>
+</head>
+
+<body>  <!-- It is <--- for 7.js file   me.parentNode.parentNode.parentNode-->
+
+    <header class="myheader">
+        <nav class="container menav ">
+            <h3>To Do Website</h3>
+            <ul class="tempfield">
+                <li class="nav-class"><a href="#mehome">Home</a></li>
+                <li class="nav-class"><a href="#melogin">Login</a></li>
+                <li class="nav-class"><a href="#mesignUp">SignUp</a></li>
+            </ul>
+        </nav>
+
+        <div class="headline" id="mehome">
+            <h2 id="main-heading">Select Your TODO List
+                <span style="display: none;"> Hello</span>  <!-- We hide "Hello" here but we can see it in consol-->
+            </h2>
+            <button type="submit" class="btn btn-headline">Do Selection</button>
+        </div>
+    </header>
+
+    <section class="todo-sec container" id="melogin">
+        <h2 class="amh2">Todays Plan ???? </h2>
+        <form class="form-todo ">
+            <input type="text" name="" id="enterInput" placeholder="Add TODO List">
+            <input type="submit" value="Add TODO" class="btn todoSubmitBtn">
+        </form>
+
+        <ul class="todolist ">
+            
+        </ul>
+
+ <!-- this below for file no 11.js -->
+
+        <!-- <ul class="todoList container">
+            <li>todoList1</li>
+            <li>todoList2</li>
+            <li>todoList3</li>
+            <li>todoList4</li>
+        </ul> -->
+
+    </section>
+
+
+    <section class="signUp-Sec container" id="mesignUp">  <!--me.parentNode.parentNode-->
+        <h1>Sign Up Now</h1>
+         <form action="" class="signUp-form"> <!--me.parentNode-->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPass">ConfirmPass</label>
+                <input type="text" name="confirmPass" id="confirmPass">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email">
+            </div>
+            <div class="form-group">
+                <label for="about ">About You</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="btn SignUp-btn">Submit</button>
+
+        </form>
+    </section>
+        
+</body>
+</html>

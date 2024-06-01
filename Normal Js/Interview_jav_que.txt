@@ -1,0 +1,36 @@
+IMP Interview Que Javascript
+
+15 May 2023
+19:22
+
+	• Hoisting =   Hoisting 
+	means that irrespective of where the variables and functions are declared, they are moved on top of the scope. The scope can be both local and global.
+	
+	Example 1:
+	hoistedVariable = 3;
+console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized	varhoistedVariable;
+	
+	From <https://www.interviewbit.com/javascript-interview-questions/#different-data-types-present-in-javascript> 
+	
+	
+
+	• Difference between var and let keyword
+	
+	 Var =  has functional scope    ------------>   were it can access inside as well outside the funct 
+	Let = has block scope      ----------> means it can access with in specific block only
+	
+	NOTE =>  Here let and const  are not used for intialized in hoisting 
+	
+	
+	
+	
+	• Explain passed by value and passed by reference.
+	
+	In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
+	
+	
+	
+	Explain Closures in JavaScript.
+	
+	Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
+	

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+    <div id="content">Hello, World!</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const contentDiv = document.getElementById('content');
+            contentDiv.textContent = 'DOM is fully loaded and parsed!';
+        });
+    </script>
+</body>
+</html>
+
+<!-- Explanation:
+The DOMContentLoaded event is a crucial part of web development. 
+It ensures that your script runs only after the entire HTML document 
+has been fully completely loaded and parsed, without waiting for stylesheets, 
+images, and subframes to finish loading. 
+
+HTML Structure: A simple HTML structure with a <div> element.
+JavaScript Code:
+The script waits for the DOMContentLoaded event.
+When the event is fired, it changes the text content of the <div> element.
+Behavior: The script modifies the DOM as soon as the HTML is completely
+ loaded and parsed, without waiting for other resources like images.
+
+-->
+
+
+
+
+
+
