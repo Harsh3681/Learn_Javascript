@@ -22,7 +22,7 @@
 // Using setTimeout() Recursively 
 
 // setTimeout()
-// Whereas if we use recursive setTimeout() method, the 10 ms delay is guaranteed 
+// Whereas if we use ######## recursive setTimeout() method ########, the 10 ms delay is guaranteed 
 // irrespective of whether the function takes more or less time to execute. 
 // The new call will ###### always be scheduled after the end of the previous call #####
 // Using setTimeout() Recursively

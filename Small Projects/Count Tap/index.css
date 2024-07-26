@@ -1,0 +1,34 @@
+
+h1{
+   
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 10rem;
+}
+    
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mytext{
+    
+}
+.num{
+   
+}
+.Button{
+    color: white;
+    border-radius: 13px solid blue;
+    background-color: rgb(169, 106, 228);
+    margin: 0 15px 1px 0;
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+

@@ -4,7 +4,7 @@ console.log("🍑🍌");
 // -------------------------------------------------------------
 
 // async and await is the new way to handle promises.
-// async and await is the syntactical sugar over promises.
+// async and await is the syntectical sugar over promises.
 // async and await work as follows:
 // async function myfunction(){
 //     await mypromise;
@@ -62,7 +62,7 @@ myPost().then((data)=>{     // this is for to get data
 async function DailyWheather(){
 
     let PuneWeather = new Promise((resolve, reject)=>{
-        setTimeout(() =>{
+        setTimeout(() =>{       // setTimeout is "Asynch function"
             resolve("Temperature 22 C")
         }, 2000);
         
@@ -99,7 +99,6 @@ async function DailyWheather(){
     return [day1, day2];
     // return [day3, day4];
 
-     
 }
 
 // DailyWheather(); // <--- this also can call it.
@@ -108,7 +107,8 @@ function justFunct(){
     console.log('I am not async await funct i.e "I am execute 1st"');
 }
 
-console.log('Welcome to DailyWheather');
+console.log('Welcome to DailyWheather');        // <--- sysnchronous statement don't wait for execution.
+
 let a = DailyWheather(); //<-- DailyWheather() return promise we store it in "getValue" and "Consumed" it using "then()"
 let b = justFunct();
 
@@ -116,10 +116,14 @@ a.then((x)=>{
     console.log("Values --> ",x);
 })
 
+// --------------------------------------------
+// if we run our below code allow remaining "Asynch" funct will wait until this below synch fun will not execute becz it's value is to large.
 
-
-
-
+// var p = 1;
+// for( var i=1; i<10000000000; i++){
+//     p+=i;
+// }
+// console.log('p ',p);
 
 
 

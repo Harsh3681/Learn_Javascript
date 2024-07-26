@@ -1,0 +1,11 @@
+To Run this Project use script
+
+1)  npm run dev
+
+2)  then in chrome past --->    http://localhost:3000/signup.html
+
+3)  register by email and password 
+    click no thanks
+
+4) Register Passkey
+

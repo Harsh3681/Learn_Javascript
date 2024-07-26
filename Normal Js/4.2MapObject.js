@@ -83,7 +83,7 @@ for(let [k,v] of myMap){        // here we use destructuring in map to print key
 // -----------------------------------------------------------------
 
 console.log('');
-console.log("Print value by key " +myMap.get("age"));  // printing value by key
+console.log("Print value by key " + myMap.get("age"));  // printing value by key
 
 
 var per = {
