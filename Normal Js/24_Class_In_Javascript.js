@@ -3,6 +3,8 @@
 //  ####  Class  ####
 //  ####  new keyword ####
 
+// #### we can create multiple class in js ####
+
 
 class myClass{
     constructor(Fname, Lname, age){
@@ -28,7 +30,7 @@ class myClass{
 
 // OR ------------------------------------------------------------------------
 
-let myVariable = class myClass{     // we can also store class in "Variable"
+let myVariable = class myClass{     // we can also store class in "Variable" // 👉 here the same class name is valid until we store the class in any variable. 👉 Else it show us an error
     constructor(Fname, Lname, age){
         this.Fname = Fname;
         this.Lname = Lname;
@@ -75,7 +77,9 @@ console.log(stu6.singAsong());
 // Check created "Obj" is "instance" of Class or Not
 
 console.log("stu1 is instanceof myClass ",stu1 instanceof myClass);
+console.log("stu4 is instanceof myClass ",stu4 instanceof myClass);
 console.log("stu1 is instanceof Object ",stu1 instanceof Object);
+console.log("stu4 is instanceof Object ",stu4 instanceof Object);
 
 
 

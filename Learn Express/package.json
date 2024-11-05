@@ -9,7 +9,8 @@
     "2middleware": "nodemon 2_middleware.js",
     "3req_body": "nodemon 3_req_body_SpecialCase.js",
     "4http_response": "nodemon 4_Http_response.js",
-    "5fetch_req": "nodemon 5_fetch_req.js"
+    "5fetch_req": "nodemon 5_fetch_req.js",
+    "6different_ways": "nodemon 6_different_ways.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,8 @@
   "dependencies": {
     "body-parser": "^1.20.2",
     "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.2",
     "nodemon": "^3.1.4"
   }
 }

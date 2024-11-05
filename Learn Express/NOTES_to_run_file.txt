@@ -1,4 +1,6 @@
 
+👉👉👉👉 to run normal "js" file --->👉 node filename.js
+
 
 1) first create folder whatever name need to give.
 
@@ -19,6 +21,7 @@ find the proper name given as key in 👉 "scripts" obj in 👉👉 "package.jso
 
 ---------------------------------------------------------------------------------------------------------
 
+
 👇👇👇👇👇👇👇👇👇👇👇👇👇👇👇 This are 3 ways to send data to ur backend 
 
 so in every handlePostRequest(req, res) or handlePostRequest(req, res)  funct 
@@ -27,6 +30,16 @@ so in every handlePostRequest(req, res) or handlePostRequest(req, res)  funct
 
 👉👉 But in case of 👉 "Body" we can't directly access to "req.body.value" for that we need first 👉 install package 👉 npm install body-parser and then getting it by 👉👉 --> var bodyParser = require('body-parser') and then use it by 👉👉 --> app.use(bodyParser.json())
  👉 then we can use 👉👉  var val = req.body.value;   👈👈👈👈👈 headers.value or anything using (.) 👉👉 means we pass value in 👉 "Body" section in "Postmane"
+
+
+
+
+👉👉👉👉  but now 😁"body parser"😁 work is directly done by.👇
+
+const express = require('express');
+app.use(express.json());  <----- this "express.json()" work under the hood of 😁"body parser"😁
+
+and we can access directly 👉👉 const UserInfo = req.body
 
 ---------------------------------------------------------------------------------------------------------
 

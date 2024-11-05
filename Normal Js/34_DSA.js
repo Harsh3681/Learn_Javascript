@@ -161,7 +161,7 @@ MyFinalOutPut(7);
 
 // Find Calculate Time req to calculate sum from 1 to n
 
-var n = 1000000000;
+var n = 1000000000; // hundred coror
 const startTime = new Date().getTime();     // Date().getTime() <----- it return time in milisec
 var sum=0;
 for(var i=1; i<=n; i++){

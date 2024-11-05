@@ -8,7 +8,7 @@
 // -------------------------------
 
 // difference between the bind() and call() methods.
-// bind() method creates a new function that you can "execute later" while call() method executes the function "immediately".
+// bind() method creates a new function that you can 👉"execute later" while call() method 👉"executes" the function "immediately".
 
 // -------------------------------
 
@@ -29,7 +29,7 @@ myfun.call(1,"blue","Pink")    // call myfun()
 const user1 = {
     id :3,
     name:"Harsh",
-    about : function(){
+    about : function(){ // use can give any name instead of "about"
         console.log(`person id ${this.id} name ${this.name}`)
     }
 }
@@ -44,7 +44,7 @@ const user2 = {
 console.log('Call() function');
 
 // myfun.call(user2);
-user1.about.call();         // not work
+user1.about.call();         // not work becz the call() always need at least one parameter inside it.
 console.log('');
 
 user1.about.call(user2);    // it's work
@@ -75,6 +75,9 @@ const person = {
     firstName: 'John',
     lastName: 'Doe'
 }
+
+console.log('New Obj ---> ',per1.name);
+
 
 function greet(greeting, message) {
     return `${greeting} ${this.firstName}. ${message}`;
@@ -150,6 +153,10 @@ const ans2 = runner.run.bind(flyer,56);
 const ans3 = flyer.fly.bind(flyer,50);
 ans2();
 ans3();
+
+
+var j = "j";
+console.log('');
 
 
 

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/ToDo_List.css">
+
+    <script src="/ToDo_List.js" defer></script> 
+    
+    <title>Create HTML for DOM Understanding</title>
+</head>
+
+<body>
+
+    <header class="myheader">
+        <nav class="container menav ">
+            <h3>To Do Website</h3>
+            <ul class="tempfield">
+                <li class="nav-class"><a href="#mehome">Home</a></li>
+                <li class="nav-class"><a href="#melogin">Login</a></li>
+                <li class="nav-class"><a href="#mesignUp">SignUp</a></li>
+            </ul>
+        </nav>
+
+        <div class="headline" id="mehome">
+            <h2 id="main-heading">Select Your TODO List
+                <span style="display: none;"> Hello</span>  <!-- We hide "Hello" here but we can see it in consol-->
+            </h2>
+            <button type="submit" class="btn btn-headline">Do Selection</button>
+        </div>
+    </header>
+
+    <section class="todo-sec container" id="melogin">
+        <h2 class="amh2">Todays Plan ???? </h2>
+        <form class="form-todo ">
+            <input type="text" name="" id="enterInput" placeholder="Add TODO List">
+            <input type="submit" value="Add TODO" class="btn todoSubmitBtn">
+        </form>
+
+        <ul class="todolist ">
+            
+        </ul>
+
+ <!-- this below for file no 11.js -->
+
+        <!-- <ul class="todoList container">
+            <li>todoList1</li>
+            <li>todoList2</li>
+            <li>todoList3</li>
+            <li>todoList4</li>
+        </ul> -->
+
+    </section>
+
+
+    <section class="signUp-Sec container" id="mesignUp">  <!--me.parentNode.parentNode-->
+        <h1>Sign Up Now</h1>
+         <form action="" class="signUp-form"> <!--me.parentNode-->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPass">ConfirmPass</label>
+                <input type="text" name="confirmPass" id="confirmPass">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email">
+            </div>
+            <div class="form-group">
+                <label for="about ">About You</label>
+                <textarea name="about" id="about" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="btn SignUp-btn">Submit</button>
+
+        </form>
+    </section>
+        
+</body>
+</html>

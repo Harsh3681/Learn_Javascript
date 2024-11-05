@@ -19,6 +19,7 @@ console.log("🍑🍌");
 // ####### await keyword only work with the async function. #######
 // -------------------------------------------------------------
 
+// 👇👇👇👇👇👇👇
 
 // const myPost = async() =>{    // this is the way to write async funct ----> arrow funct
 

@@ -1,7 +1,7 @@
 
 const express = require("express")
 const app = express();
-const port = 5000
+const port = 2000
 
 // ---------------------------------------------------------
 /*  ######### Middleware 👈👈👈👈👈👈👈 is one who consume the "request" first before reach to the "get","psot","put", or "delete"
@@ -39,6 +39,7 @@ function middleware(req, res, next){    // here we use this middleware for "Post
     
     next();     // the post req first come here in middleware and pass becz of 👉👉 "next()" funct if we comment // 👉👉 "next()" fuct then the "handlePostRequest()" fuct got stuck there in {middleware} and 👆 above res. "Error" msg seen 
 }
+
 app.use(middleware);
 
 // ---------------------------------------------------

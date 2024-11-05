@@ -1,0 +1,41 @@
+
+
+different betweeb 👉👉👉👉 json And JSON
+
+👉👉👉👉 "JSON"
+
+Example: A JSON object representing a user:
+
+{
+  "name": "John",
+  "age": 30,
+  "isStudent": false
+}
+const jsonObject = JSON.stringify(jsonString); // convert js obj to String
+console.log(jsonObject);
+
+Ex.
+    const jsonString = '{"name": "John", "age": 30}';
+    const jsonObject = JSON.parse(jsonString);    // convert String to js obj
+    console.log(jsonObject);
+
+---------------------------------------------------------------------------------------
+
+👉👉👉👉 "json"
+
+Here "res.json()" means  // Sending the response as JSON format
+
+Ex.  
+    const responseObject = {
+        message: "Admin created successfully"
+    };
+
+    res.json(responseObject);  // Sending the response as JSON
+
+Or  res.json({message : "Admin create successfully"});
+
+
+File Extensions: .json is the standard "file extension" for JSON files.
+Ex. data.json
+
+

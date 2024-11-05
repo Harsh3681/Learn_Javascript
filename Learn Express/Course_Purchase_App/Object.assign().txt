@@ -1,0 +1,38 @@
+
+
+👉👉 Object.assign(existingObj, req.body);--> in your Express route handler is 
+used to update an 👉👉 "existing Object" with the 👉"new data" provided in the request body.
+
+
+const COURSES = [
+    { id: 1, title: 'Math 101', description: 'Basic Math', duration: '10 weeks' },
+    { id: 2, title: 'Physics 101', description: 'Basic Physics', duration: '12 weeks' }
+];
+
+Assume the client sends a PUT request to update the course with👉👉 id: 1.
+
+here is data to replace with id 1
+
+{
+    "title": "Advanced Math",
+    "duration": "12 weeks"
+}
+
+☝️☝️☝️ this above 👉 req.body 
+
+
+const CourseIndex = Number(req.params.courseId);  // here from user ID = 1
+const findCourse = COURSES.find((i) => i.id === CourseIndex); // here "find" will return overall "course Obj" fom "COURSES" array
+
+Object.assign(findCourse, req.body);
+
+☝️☝️☝️ Above line means assigned update 👉 req.body to 👉 "findCourse" 
+
+
+Output 👇👇👇
+
+{ id: 1, title: 'Advanced Math', description: 'Basic Math', duration: '12 weeks' }
+
+
+
+

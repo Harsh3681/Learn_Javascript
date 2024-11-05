@@ -2,7 +2,7 @@
 const express = require("express")
 var bodyParser = require('body-parser')  // Learn about it in 👉👉 "NOTES.txt"
 const app = express();
-const port = 7000
+const port = 4000
 
 app.use(bodyParser.json())      // Why us it learn about it in 👉👉 "NOTES.txt"
 
@@ -58,7 +58,7 @@ function getWebPage(req, res){
 
 /*👉*/ app.post("/Addvalue", handlePostRequest);
 
-/*👉*/ app.get("/", getWebPage);  // <------- http://localhost:7000/
+/*👉*/ app.get("/", getWebPage);  // <------- http://localhost:4000/ <---- run on web page
 
 
 

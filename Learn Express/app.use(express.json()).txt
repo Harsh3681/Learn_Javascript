@@ -1,0 +1,32 @@
+
+
+"app.use" Method: This method is used to 👉 mount middleware functions
+
+"express.json()" Function: This function is 👉 built-in middleware function
+It parses incoming requests to 👉👉JSON payloads
+
+here 👉👉 JSON Payloads is request with a "JSON body" is 👉received, 
+ans 👉👉 express.json() parses the "body" and 👉"converts" into a 👉"JavaScript object."
+
+By using app.use(express.json());, you ensure that this parsing middleware is applied to 
+all incoming requests before they reach your 👉👉 route handlers. 
+This means any "route" that expects JSON input can access the parsed data directly
+👉👉 via "req.body".
+
+Ex. 👇👇👇👇
+
+const express = require('express');
+const app = express();
+
+app.use(express.json());
+
+
+app.post('/data', (req, res) => {
+ 
+    const receivedData = req.body; 👈👈👈 here is main thing happen by --> app.use(express.json());
+    console.log(receivedData);
+
+    res.json({ message: "Data received", data: receivedData });
+});
+
+

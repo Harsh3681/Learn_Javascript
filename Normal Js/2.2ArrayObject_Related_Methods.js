@@ -273,7 +273,7 @@ console.log("MeFill "+example);
 //  ############### Splice Function(Method)  ###############
 
 const myArray = [1,2,3,4,5,6,7,8,9,10];
-myArray.splice(2, 6, 0);  // here we delete the element start from index 2 upto index "6" element means upto "8" and fill "0" at that place
+myArray.splice(2, 6, 0);  // here we delete the element start from index 2 upto index "6" element means "3,4,5,6,7,8" <--- 👈 and fill "0" at that place
 
 console.log("new Array of Splice function is below");
 console.log(myArray);

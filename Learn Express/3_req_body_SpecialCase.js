@@ -2,7 +2,7 @@
 const express = require("express")
 var bodyParser = require('body-parser')  // Learn about it in 👉👉 "NOTES.txt"
 const app = express();
-const port = 6000
+const port = 3000
 
 app.use(bodyParser.json())      // "bodyParser" is middleware here // Why us it learn about it in 👉👉 "NOTES.txt"
 
