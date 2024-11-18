@@ -15,7 +15,7 @@ console.log("Name");
 var mySet = new Set([2,3,5,6]);  // we can pass "number Array" in set Set
 console.log('Myset ',mySet);
 
-// var st = new Set(2,56,2,5,2,22);     // we can't do this becz it not iterable as "for loop" that's why we pass "Array" as above.
+// var st = new Set(2,56,2,5,2,22);     // we can't do this becz it is not iterable as "for loop" that's why we pass "Array" as above.
 // becz "Array" and "String" is iterable.
 
 var str = new Set("Iterable String");

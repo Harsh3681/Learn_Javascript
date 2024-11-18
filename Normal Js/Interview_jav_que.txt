@@ -1,36 +1,97 @@
 IMP Interview Que Javascript
 
+	From <https://www.interviewbit.com/javascript-interview-questions/#different-data-types-present-in-javascript> 
+
 15 May 2023
 19:22
 
-	• Hoisting =   Hoisting 
-	means that irrespective of where the variables and functions are declared, they are moved on top of the scope. The scope can be both local and global.
-	
-	Example 1:
-	hoistedVariable = 3;
-console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized	varhoistedVariable;
-	
-	From <https://www.interviewbit.com/javascript-interview-questions/#different-data-types-present-in-javascript> 
-	
-	
+	• 👹👉 Hoisting  =   Hoisting 
+	Means Calling function before declared it.
 
-	• Difference between var and let keyword
+	⏭️ Example 1:
 	
-	 Var =  has functional scope    ------------>   were it can access inside as well outside the funct 
+	myFucnt();  // here we call funct before define it
+
+	function myFucnt(){
+		console.log("hey");
+	}
+
+-----------------------------------------------------------------------------------------------
+	
+	• 👹👉 Difference between var and let keyword
+	
+	Var =  has functional scope    ------------>   were it can access inside as well outside the funct 
 	Let = has block scope      ----------> means it can access with in specific block only
 	
 	NOTE =>  Here let and const  are not used for intialized in hoisting 
 	
+-----------------------------------------------------------------------------------------------
+
+	• 👹👉 Callback function
+
+	⏭️ Ex. 
+
+	function urfunc(name){
+
+		console.log("hey i am urfunc");
+		console.log("ur name is "+ name);
+	}
+
+	function myfunc(urfunc){      // instead of "callback" we can mention any name
+
+		console.log("hey i am myfunc");
+		urfunc("jayu");
+	}
+	myfunc(urfunc);
+
+-----------------------------------------------------------------------------------------------
 	
-	
-	
-	• Explain passed by value and passed by reference.
+	• 👹👉 Explain 👉"passed by value" and 👉"passed by reference".
 	
 	In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
 	
+-----------------------------------------------------------------------------------------------	
 	
-	
-	Explain Closures in JavaScript.
+	Explain 👹👉 "Closures" in JavaScript.
 	
 	Closures are an ability of a function to remember the variables and functions that are declared in its outer scope.
+	Means normally "child funct" can access "parent" funct variable/argument/parameter but vice-verse not allow.
 	
+	⏭️ Ex.
+
+	function ArthiOper(a){
+    function OperType(b){
+        return a**b;
+    }
+    return OperType;
+}
+
+
+-----------------------------------------------------------------------------------------------
+
+	• 👹👉 // ########## optional chaining ##########
+
+	optional chaining is used to check if the property is present or not in the object . using operator 👉 (?.)
+	if the 👉 property is present return "value" else 👉 return "undefined"
+	// Means it basically used to prevent from occurring an "ERROR"
+
+	⏭️ Ex. 
+	const hey = {
+		name: "harsh",
+		// add : { "newStreet" : "272" }
+	}
+	console.log(hey ?.name);
+
+-----------------------------------------------------------------------------------------------
+
+	• 👹👉 
+
+
+-----------------------------------------------------------------------------------------------
+
+	• 👹👉 
+
+
+
+
+

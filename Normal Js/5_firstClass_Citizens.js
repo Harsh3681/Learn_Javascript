@@ -20,8 +20,10 @@ let result1 = add(10, 20);
 
 // Alternatively, we can all the add() function via the sum variable like this:
 
-let result2 = sum(10,20);
+let result2 = sum(10,50);
 
+console.log('result1 ', result1);
+console.log('result2 ', result2);
 
 
 

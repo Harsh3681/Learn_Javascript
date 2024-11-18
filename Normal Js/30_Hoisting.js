@@ -3,7 +3,7 @@
 
 //          ##########  Hoisting  ############
 
-// means calling the fnction before complet it's decleration
+// means calling the function before complete it's declaration
 
 hello();
 

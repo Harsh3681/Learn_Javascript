@@ -2,13 +2,14 @@
 
 console.log('\n\n Types Of Functions Started......');
 
-//  "Ways" to declered the function
+//  "Ways" to declared the function
 //                          ways below
 
 function f1(){              // 1 way
     console.log('me f1');
 }
 f1();
+
 function f2(a,b){           // 2 way
     console.log(a*b);
 }
@@ -23,7 +24,6 @@ const f4 = function(a,b){   // 4 way
     console.log(a+b);
 }
 f4(2,2)
-
 
 const f6 = () =>{           // 5 way
     console.log('I am fun f6 without name and without variable ');
@@ -46,7 +46,7 @@ f7(9,9)
 
 console.log('\n\n HigherOrder Started......');
 
-function higherOrder(fn) {      // <--- here "fn" act as an funnction.
+function higherOrder(fn) {      // <--- here "fn" act as an function.
     return fn();
 }
 
@@ -54,6 +54,7 @@ function higherOrder(fn) {      // <--- here "fn" act as an funnction.
 higherOrder( function() {
      console.log("Hello world1") 
 });  // here also we create the function "without it's "name" --> function() it may show error but how it working here i don't know
+
 
 //  ###### 2nd way to pass to "higherOrder"
 higherOrder( function go() {
@@ -73,7 +74,7 @@ janu(); // <--- Janu call here
 console.log('');
 
 // ------------------------------------------------------------------------------
-// Non parameteriaz function
+// Non parameterize function
 
 console.log("Name");
 function myFunc(){
@@ -85,7 +86,7 @@ console.log(my);         // remove comment and run
 
 // ------------------------------------------------------------------------------
 
-// parameteriaz function
+// parameterize function
 
 // less then greater then
 
@@ -104,7 +105,7 @@ function firstChar(x){
 }
 
 
-// console.log(firstChar("harsh"));     // remove comment and run
+console.log("get 1st char ",firstChar("harsh"));     // remove comment and run
 
 // ------------------------------------------------------------------------------
 
@@ -179,7 +180,7 @@ console.log('\n\n Hoisting Started......');
 
 //          ##########  Hoisting  ############
 
-// means calling the function before complet it's decleration
+// means calling the function before complete it's declaration
 
 hello();
 
@@ -200,9 +201,9 @@ function myApp(){
         return x+y;
     }
     
-    const Sub = (x,y) => (x-y);     // this just a funct
+    const Sub = (x,y) => (x-y);     // this just a funct, arrow funct
     
-    const greed = () => console.log("Nice!!!!!");
+    const greed = () => console.log("Nice!!!!!"); // arrow funct
     
     console.log("how are u");
     console.log(Sub(6,4));
@@ -212,15 +213,15 @@ function myApp(){
 
 myApp();
 
-//  here we can call the function only from inside the functiom once we declered it inside function.
+//  here we can call the function only from inside the function once we declared it inside function.
 //  we can't call it from outside the block
 
 // greed()      // generate Error
 
 // ----------------------------------------------------------
 
-console.log('\n\n Laxical Scope Started......');
-        // ############### Laxical Scope  ###############
+console.log('\n\n Lexical Scope Started......');
+        // ############### Lexical Scope  ###############
 
 // var <----- can used "inside as well as outside also" also in "function"  # has    "function Scope"
 
@@ -231,8 +232,10 @@ var hey = "hiii";
 
 let mee = "men";
 
+const tu = "girl";
+
 const ghen = () =>{
-// All redeclered variables must need to put inside { } <-- bracket compulsion
+// All redeclare variables must need to put inside { } <-- bracket compulsion
 
     {var hey = "bye";}        // without comment it , it will print an "bye"   with comment it , it will print an "hii"
 
@@ -240,11 +243,14 @@ const ghen = () =>{
 
     // {mee = "female";}  // <-- But😅 this is possible if we remove "let"
 
-    // but  "var" "bye" we can easily aceess
+    {const tu = "working"}
+
+    // but  "var" "bye" we can easily access
     console.log(hey);
 
     console.log(mee);
 
+    console.log(tu);
 }
 
 ghen();
@@ -290,7 +296,6 @@ function urfunc(name){
 
     console.log("hey i am urfunc");
     console.log("ur name is "+ name);
-
 }
 
 function myfunc(urfunc){      // instead of "callback" we can mention any name
@@ -346,11 +351,11 @@ multi(arr);
 
 console.log("\nAm foreach 1");
 
-// here "arr" is am array that we declered above
+// here "arr" is am array that we declared above
 /*  it act same as the "Map" funct but it will "not able" to return the 
     "Array"  Map will return the "array" as o/t      */
     
-arr.forEach(function(arr){                  // here we are create an anonomus funct which don't have any name
+arr.forEach(function(arr){                  // here we are create an anonymous funct which don't have any name
     console.log("2 * "+arr +" = "+arr*2);
 })
 

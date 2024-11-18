@@ -12,12 +12,12 @@ const output = (i) =>{
 
 console.log('Here below map return array as output');
 
-console.log('Without arraow funct');
+console.log('Without arrow funct');
 const MapArrayOutput1 = meArray.map(output);
 console.log(MapArrayOutput1); 
 
 
-console.log('By arraow fun below');
+console.log('By arrow fun below');
 const MapArrayOutput2= meArray.map((me)=>{return me*me});
 console.log(MapArrayOutput2); 
 
@@ -34,7 +34,7 @@ const obj = {
     key1 : "value1",
     key2 : "value2"
 }
-let onk = Object.assign(obj); // it also another wayto clone
+let onk = Object.assign(obj); // it also another way to clone
 
 // way1
 let obj2 = {...obj};  // it will create a new object and copy all the properties of obj to obj2

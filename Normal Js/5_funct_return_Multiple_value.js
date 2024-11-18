@@ -11,6 +11,8 @@ function getNames() {
 }
 
 let names = getNames();  // store it in variable
+
+console.log('Ans ', names);   
 console.log('Ans ',typeof names);   // it return obj
 
 console.log('fname ', names[0]);
@@ -36,7 +38,7 @@ function getNames2() {
     return { firstName, lastName };
 }
   
-let nam = getNames2();
+let nam = getNames2();  // here we done first class citizen kind of thing.
 
 let fNam = nam.firstName,
     LNam  = nam.lastName;

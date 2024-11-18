@@ -1,8 +1,12 @@
 
-// closures are nothing but functions inside a function here we can 
-// "access the #### parent function #### ---> variables" and 
-// "parameters in <--- #### child function ####" but we are not able to access 
-// #### child function #### ---> "variables" and "parameters" in <--- #### parent function #### 
+/*  closures are nothing but functions inside a function here we can 😍"Access" the #### 👉 parent function 👈 #### 🛗 "variables" and "parameters" 🛗 
+    in <--- ####👉 child function 👈####" 
+    but we are not able to access 
+    #### 👉 child function #### ---> 🛗"variables" and "parameters"🛗 in <--- #### parent function #### 
+*/ 
+
+// "parent" che child gheu shakto ✔️ but "child" che parent nhi ❌
+
 // Ex. 
 
 function ArthiOper(a){
@@ -13,22 +17,41 @@ function ArthiOper(a){
 }
 
 const Arthi = ArthiOper(5);         // here we try to do cube of "5" by "3"
-const ans = Arthi(3);      
+const ans = Arthi(3);  
+
+// Another way to calling such funct 👇👇👇👇👇
+
+let pp = ArthiOper(2)(6); // 👈 ()() try to do cube <------
+console.log('pp ',pp);
 
 console.log('Answer '+ ans);
-console.log('Arthi ', Arthi);        //  ,
-console.log('Arthi '+ Arthi);       //  +
+console.log('Arthi ' , Arthi);        //  ,     👈
+console.log('Arthi ' + Arthi);       //  +      👈
 
  
-function myfunc(name, age){
-    function ufunct(){
-        console.log(age, name);
+// function myfunc(name, age){
+
+//     function ufunct(){
+//         console.log(age, name);
+//     }
+//     return ufunct;
+// }
+
+// const ha = myfunc("jay",12);
+// ha();
+
+// --------------------------------------------------------------------------------
+
+function myfunc1(){
+    function ufunct1(name, age){
+        console.log(name, age);
+        
     }
-    return ufunct;
+    return ufunct1;
 }
 
-const ha = myfunc("jay",12);
-ha();
+const ha1 = myfunc1();
+ha1("Namo",12);
 
 // ----------------------------------------------------------------
 

@@ -1,10 +1,28 @@
 "use strict";
 
-// Immediately invoked function execution
+// Immediately Invoked Function Execution (IIFE)
+
+(function myfunct() {
+    console.log('Named funct');
+})();
+
+// OR ##############
 
 (function() {
-    console.log('IIFE');
+    console.log('IIFE unNamed Funct');
 })();
+
+// OR ##############
+
+(()=>{
+    console.log("anonymous function");
+})();
+
+// OR ##############
+
+((name)=>{
+    console.log(`your name ${name}`);
+})("Jayesh");
 
 // OR ##############
 

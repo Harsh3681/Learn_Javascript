@@ -15,14 +15,15 @@ console.log('Product ', product);
 
 //  Convert "Object" to "String"
 
-let str = JSON.stringify(product);  //  "JSON.stringify()"
+let str = JSON.stringify(product);  //  "JSON.stringify()"  --> js to string
 console.log('Ans ', str);
 console.log('type ',typeof str);
 
 //  Convert "String" to "Object"
 
-let newObj = JSON.parse(str);   //     "JSON.parse()"
-newObjconsole.log('type ',typeof newObj);
+let newObj = JSON.parse(str);   //     "JSON.parse()"    --> string to js
+console.log('Ans2 ', newObj);
+console.log('type ',typeof newObj);
 
 
 

@@ -7,11 +7,11 @@ let b = a;
 console.log(`a = ${a} && b = ${b}`);
 a = 7; // make change in a
 console.log(`a = ${a} && b = ${b}`);  // here "a" refer to "7" now and "b" still refer to "4"
-// this happen only becz of variable store value in diff memory location.
+// this happen only becz of variable store value in diff "memory location". 👈👈👈
 
 // --------------------------------------------
 
-// But  with "Object" the variables pointing to same memory location
+// But  with "Object" the variables pointing to same "memory location" 👈👈👈
 // as a "refernce" value.
 // here "x" and "y" refer to the same memory location i.e {num : 5}
 // when we try to make change in value of "x.num = 89"
@@ -28,7 +28,7 @@ console.log(`x = ${x.num} && y = ${y.num}`);
 
 let p = {pinto : "hsu"}
 let q = {pinto : "hsu"}
-console.log('Ans ', p==q);      // becz both time obj is compare theorally not depply 
+console.log('Ans ', p==q);      // becz both time obj is compare thoroughly not deeply 
 console.log('Ans ', p===q);
 
 

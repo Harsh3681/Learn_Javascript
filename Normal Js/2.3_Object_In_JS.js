@@ -55,7 +55,8 @@ function fu(id,sal){        // here we create an "function"
 }
 
 let obj4 = new fu(12,2900000)       // here we call that "function" as a "constructor"
-document.write(`your id = ${obj4.id}  and sal ${obj4.sal}`)
+// document.write(`your id = ${obj4.id}  and sal ${obj4.sal}`) // write on page
+console.log(`your id = ${obj4.id}  and sal ${obj4.sal}`)
 
 // ------------------------------------------------------------------------
 
@@ -150,6 +151,19 @@ let server2 = {
 
 server2['starting up']();      // hence we need to call it using "bracket"
 
+
+// -----------------------------------------------------------------------
+
+const myObjNow = {
+    fname : "jay",
+    lname : "bhai",
+
+    justNewFunct : function() {
+        console.log("Normal Funct");
+    }
+}
+
+myObjNow.justNewFunct();
 
 
 

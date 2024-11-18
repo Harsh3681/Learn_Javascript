@@ -9,9 +9,9 @@
 
 // diff bet "Map" and "Map Obj"
 
-// "Here map have only" "String" or "symbol" as "key"
+// "Here map have only" "String" or "symbol" as 👉 "key"
 
-// we can use "array" "number" "string" as "Key" here in "MapObj"
+// we can use "array" "number" "string" as 👉 "Key" here in "MapObj"
 
 
 // Map is a data structure that stores key-value pairs. It is similar to an object, but the main difference is that Map allows keys of any type.
@@ -36,9 +36,11 @@ console.log(myMap);
 
 // add value in map
 
-// myMap.set("key","vakue");  <---- this way we can set "Key Value Pair"
+// myMap.set("key","value");  <---- this way we can set "Key Value Pair"
 
 myMap.set("name","Harsh","baba","bebo");    //<--- "baba","bebo" not possible it consider only 1st 2 ele i.e ---> "name","Harsh"
+console.log('myMap ', myMap);
+
 myMap.set("age",25);
 myMap.set("name","Harsho");  // we can add duplicate key in map
 

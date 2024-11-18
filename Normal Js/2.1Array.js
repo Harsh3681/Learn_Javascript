@@ -13,8 +13,9 @@ console.log(arr);
 
 arr[0] = 11;
 console.log(arr);
-const ki = [...arr]
+const ki = [...arr];
 let mixed = [1,2.5,"string",false, true,11n, ki, null, undefined]
+console.log("Ki", ki); 
 console.log("Ki",typeof ki); 
 
 mixed.forEach(el => {               // here we try to check the datatype of each ele in array "mixed"
@@ -41,7 +42,7 @@ const arr2 = ["sun","moon"]
 
 // arr2 = "mars";              // this is not possible in case of "const" insteat of it if "let" or "var" is there on this place it will allow it "that's why we prefrered to use an "const"
 
-arr2.push("gurdians")
+arr2.push("gurdians") // push at back
 
 console.log(arr2);
 arr2.reverse()
@@ -94,8 +95,10 @@ let person = {
       return '30';
     },
 };
+console.log('I am person Obj');
+console.log(typeof +person);
 
-console.log(+person);
+
 let result = 1 ?? console.log('Hi');
 console.log('r',result);
 

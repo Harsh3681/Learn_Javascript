@@ -1,8 +1,4 @@
 
-
-
-
-
 // ############### Filter Function(Method)  ###############
 
 const ak = [1,2,3,4,5,6,7,8,9];
@@ -12,8 +8,12 @@ const iseven = function(a){         // not mendetory to pass same name of an arr
     // return a%2===0;
 }
 
-
 const EvenOrNot = ak.filter(iseven);
+
+// OR 
+
+// const EvenOrNot = ak.filter((i)=> i%2);
+
 console.log("EvenOrNot ",iseven);       //<-- it return whole funct
 console.log("EvenOrNot ",EvenOrNot);
 
@@ -22,8 +22,6 @@ const fil = ak.filter(jj =>{
 })
 
 console.log('filter',fil);
-
-
 
 const userCard = [
     {prodId : 1, proName :"Shev", procost:9282},

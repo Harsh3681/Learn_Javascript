@@ -1,8 +1,19 @@
 
 // "use strict"
 
+
+//  1)call 2)apply 3)bind
+
+//  different between 1)call 2)apply 3)bind
+/* 1) here 👉 "call" will call with funct, call takes an input arguments in form of simple way like "," and "," etc
+/* 1) here 👉 "apply" will call with funct, "apply" same as the "call" just we to pass input element in form of "Array list"
+/* 1) here 👉 "bind" will call with funct, "bind" mainly done all the operation on copy of obj/funct and it return an "funct" 👈 as output. which we can call anytime anywhere in file
+
+➡️➡️➡️ Main diff is that, the "call" & "apply" funct will "invoke" "immediately" , where "blind" funct NOT 👈
+*/
+
 // difference between the apply() and call() is that 
-// you need to -->"pass the arguments" to the apply() method as an--> "array-like object", 
+// you need to -->"pass the arguments" to the apply() method as an--> "array-List", 
 // whereas you -->"pass the arguments" to the call() function--> "individually".
 
 // -------------------------------

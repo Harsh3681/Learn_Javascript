@@ -24,7 +24,7 @@ console.log("Name " + n);
 var num =9;
 // var h = String(num);
 // or
-var h = num + "";
+var h = num + "";                //  adding " " 👈
 console.log("h type "+typeof(h));
 
 // String to number.
@@ -32,7 +32,7 @@ console.log("h type "+typeof(h));
 var hh = "9";
 // var k = Number(hh);
 // or
-var k = +hh;
+var k = +hh;                     //  power of  ➕     
 console.log("k type "+ typeof(k));
 
 
@@ -45,11 +45,24 @@ var age = 92;
 let About = `Ur name is ${name} age ${age}`
 console.log(About);
 
+// -----------------------------------------------------
+
+const Chamtkar = (...arr) =>{  // 👈👈 convert Array into "string" directly
+        return 2 + (arr);
+        // return 2 + (Number)(arr);
+}
+
+console.log("See Chamatkar 👉 " + (Chamtkar(55)));
+console.log("See Chamatkar 👉 " + typeof(Chamtkar(66)));
+
+// -----------------------------------------------------
 
 // Decleard "Bigint"
 
 let kiya = 8n;
+let kiya2 = BigInt(8);
 console.log(kiya ,"kiya type "+typeof kiya);
+console.log(kiya2 ,"kiya2 type "+typeof kiya2);
 
 // ----------------------------------------------------------------
 
@@ -109,7 +122,7 @@ console.log(' Smaller Ans '+ ans);
 
 // ----------------------------------------------------------------
 
-var aa = [1, 3, 4,9,8];
+var aa = ["hu", 3, 4,9,8];
 let [a, b, c, d,e,f] = aa;
 console.log(typeof a);
 console.log(a,b,c,d,e,f);

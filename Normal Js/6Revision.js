@@ -13,7 +13,6 @@ document.write("It Help to Write  directly on the web page")
 
 // rem(25)
 
-
 // var bmi = function myfun(weight,height){
 //     var bmi = weight/(height**2)
 //     console.log(bmi)

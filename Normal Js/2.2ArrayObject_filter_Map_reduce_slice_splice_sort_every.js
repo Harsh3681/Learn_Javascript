@@ -4,7 +4,7 @@
 
 
 
-//      #######  Object distruction  ########
+//      #######  Object destruction  ########
 // creating an array storing an multiple "obj"
 //  i.e  #######  Array Object #######
 
@@ -28,11 +28,13 @@ console.log(me[0].name);
 console.log(me[0].salary);
 console.log(me[0].age);
 
+console.log('Access data diagonally');  // 👇👇👇👇
+
 const [{name},{salary} ,{age}] =me;
 
 console.log(name);     // here we directly access an "first raw name"
+console.log(salary);      // here we c accessing all the data 😀
 console.log(age);      // and "last raw age"
-console.log(salary);      // here we diagonally accessing all the data 😀
 
 
 // Also we can change there names
@@ -53,7 +55,7 @@ const emp = [
     {name : "Hitesh", age:20}
 ]
 
-emp.forEach(function(emp){          // here create anonomus funct and pass an obj to it
+emp.forEach(function(emp){          // here create anonymous funct and pass an obj to it
     console.log(emp.name+" "+emp.age);
 });
 // or
@@ -70,10 +72,10 @@ emp.forEach(function(emp){          // here create anonomus funct and pass an ob
 
 const Arr = [3,4,5,7,2];
 
-const sqr = function(Arr){     // here we are storing deirectly the function inside variable "sqr"
+const sqr = function(Arr){     // here we are storing directly the function inside variable "sqr"
     return(Arr*Arr);
 }
-// console.log(sqr);        // generate an error
+console.log("Here is type of sqr ---> ",typeof sqr);        // generate an error
 
 const a = Arr.map((sqr));       // here we are applying "map" function on array by applying the function "sqr"
 console.log("Me sqr ans "+ a);
@@ -91,10 +93,10 @@ const agu = ((u)=>{
     return u.age;
 });
 
-const b = emp.map(user);         // here we used above declred "emp array"
+const b = emp.map(user);         // here we used above declared "emp array"
 console.log("First Name of our Emp ", (b));
 
-const pi = emp.map(agu);         // here we used above declred "emp array"
+const pi = emp.map(agu);         // here we used above declared "emp array"
 console.log("Age of Emp by anonymous function", (pi));
 
 //------------------------------------------------------------
@@ -104,7 +106,7 @@ console.log("Age of Emp by anonymous function", (pi));
 
 const ak = [1,2,3,4,5,6,7,8,9];
 
-const OnlyEven = function(a){         // not mendetory to pass same name of an array as an parameter to the function
+const OnlyEven = function(a){         // not mandatory to pass same name of an array as an parameter to the function
     return a%2!==0;
     // return a%2===0;
 }
@@ -162,8 +164,8 @@ const arr = [22,345,7,2,65,8,1];
 // here the sort function also able to take an "call back" function
 
 const mysort = arr.sort((a,b) =>{
-    return a-b;     // assending sorting (-)sign 
-    // return a+b;     // desending sorting (+)sign 
+    return a-b;     // ascending sorting (-)sign 
+    // return a+b;     // descending sorting (+)sign 
 })
 
 console.log("Me Sort() Fun")
@@ -183,8 +185,9 @@ const productsArray = [
 ]
 
 console.log('Slice Operation');
-const kk = productsArray.slice(0);
-console.log("me: " +kk)
+const kk = productsArray.slice(1); // Returns a copy of a section of an array. For both start and end, a 👉 "negative index" can be used -2 refers to the second to last element of the array.
+
+console.log("me: ", kk)
 
 const HighToLow = productsArray.sort((a,b) => {    
     return b.procost - a.procost;
