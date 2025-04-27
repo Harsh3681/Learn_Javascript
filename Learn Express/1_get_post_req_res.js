@@ -44,7 +44,7 @@ function handlePostRequest(req, res){       // 👈  POST
 
 
 /*👉*/ app.get("/getsum", handleGetRequest);
-/*👉*/ app.get("/:getsum", handleGetRequest);    // it's an wild card means 👉 anyone put http://localhost:4000/asjdadshjkabb --> anything after 4000/ then it's re-directed to 👉 /:sum and handle by 👉 handleFirstReq() function
+/*👉*/ app.get("/:getsum", handleGetRequest);    // it's an wild card means 👉 anyone put http://localhost:4000/asjdadshjkabb --> anything after 4000/ then it's re-directed to 👉 /:getsum and handle by 👉 handleFirstReq() function
 /*👉*/ app.post("/Addvalue", handlePostRequest);
 
 function started(){

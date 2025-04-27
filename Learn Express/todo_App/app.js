@@ -19,7 +19,7 @@ const todoSchema = new mongoose.Schema({
     description: String
 });
 
-const Todos = mongoose.model('Todo', todoSchema);
+const Todos = mongoose.model('Todo', todoSchema); // here our collection name is "todoApp" and we create "Todo" document name inside it.
 
 mongoose.connect('mongodb+srv://admin:admin@cluster0.5rzjxal.mongodb.net/todoApp?retryWrites=true&w=majority')
 .then(() => console.log('Connected to MongoDB'))
@@ -31,7 +31,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
-
 
 // function findTodoIndex(arr, id) {
 //     return arr.findIndex((todo) => todo.id === id);     // findIndex is Array build in funct
@@ -66,7 +65,6 @@ app.post("/todos", async (req, res) => {
     };
 
     const todoData = req.body;
-
     const requiredFields = ['title'];
     const missingField = requiredFields.find(field => !todoData[field] || todoData[field] === '');
 

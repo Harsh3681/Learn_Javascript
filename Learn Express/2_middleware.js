@@ -5,16 +5,16 @@ const port = 2000
 
 // ---------------------------------------------------------
 /*  ######### Middleware 👈👈👈👈👈👈👈 is one who consume the "request" first before reach to the "get","psot","put", or "delete"
-//  ####### Note ####### 👉👉👉 Middleware works only for 👉👉👉 "POST" req
-//  Middleware mainly use for 👉👉👉 "Authentication" purpose.
+ ####### Note ####### 👉👉👉 Middleware works only for 👉👉👉 "POST" req
+ Middleware mainly use for 👉👉👉 "Authentication" purpose.
 
-//  👉👉👉 "Parameters" 👈👈👈  (req, res, next() )
-//  req ---> can accept the data
-//  res ---> can send data
-//  next() ---> next() is funct which will permit the "get, post, put, delete" input "function"
+ 👉👉👉 "Parameters" 👈👈👈  (req, res, next() )
+ req ---> can accept the data
+ res ---> can send data
+ next() ---> next() is funct which will permit the "get, post, put, delete" input "function"
 
 
-// Ex.   ------------               ---------------
+Ex.   ------------               ---------------
          | Browser  | =============>| Middleware  |
          ------------               ---------------
                                             |
